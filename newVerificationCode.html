@@ -8,15 +8,22 @@
       /* Base styles */
       body {
         font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #F9F9F9;
-        height: 100%;
-        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: #f9f9f9;
+        height: 100% !important;
+        width: 100% !important;
         display: flex;
         justify-content: center;
         align-items: center;
-      
+      }
+
+      .email-wrapper {
+        width: 100%;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
       }
 
       .email-container {
@@ -26,18 +33,12 @@
         margin: 20px;
       }
 
-      .header {
-        background-color: #4169e1;
-        color: #ffffff;
-        text-align: center;
-        padding: 30px 20px;
-      }
+
 
       .header img {
         max-width: 100%;
         height: auto;
-        max-height: 33px;
-        margin-bottom: 10px;
+        
       }
 
       .header-title {
@@ -50,6 +51,7 @@
       .website-url {
         font-size: 14px;
         margin-top: 15px;
+        color: #ffffff;
       }
 
       .content {
@@ -63,14 +65,13 @@
       }
 
       .verification-code {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
         width: 94px;
         height: 56px;
         background-color: #f9f9f9;
         border-radius: 8px;
-        margin: 15px 0;
         font-size: 16px;
         font-weight: bold;
         color: #121315;
@@ -131,16 +132,15 @@
           background-color: #f9f9f9;
           justify-content: center;
           align-items: center;
-          width: 100%;
-          height: 100%;
+          width: 100% !important;
+          height: 100% !important;
         }
 
-        
         .email-container {
           width: 100% !important;
           max-width: 100% !important;
+          margin: 0 !important;
         }
-
 
         .content,
         .header,
@@ -159,86 +159,90 @@
     </style>
   </head>
   <body>
-    <div class="email-container">
-      <!-- Blue header -->
-      <div class="header">
-        <img src="/images/logoWithText.png" alt="Talstrike" />
-        <div class="header-title">NEW VERIFICATION CODE</div>
-        <div class="website-url">www.talstrike.com</div>
-      </div>
+    <div class="email-wrapper">
+      <div class="email-container">
+        <!-- Blue header -->
+        <div class="header">
+          <img src="/images/newCode.png" alt="Talstrike" />
 
-      <!-- Email content -->
-      <div class="content">
-        <p>Dear Dennis,</p>
-        <p>You requested a new verification code.</p>
-        <div class="verification-code">847293</div>
-        <p>
-          This code will expire in 10 minutes. Your previous code has been
-          deactivated. Still having trouble?
-          <a href="http://www.talstrikedev.com" class="link"
-            >Contact our support team</a
-          >
-          for assistance.
-        </p>
-        <p>
-          If you didn't request this new code, please secure your account
-          immediately.
-        </p>
-      </div>
-
-      <!-- Divider -->
-      <div class="divider"></div>
-
-      <!-- Footer -->
-      <div class="footer">
-        <div class="footer-column">
-          <div class="footer-heading">Follow us on</div>
-          <div class="social-icons">
-            <!-- LinkedIn icon -->
-            <a href="https://www.linkedin.com/company/talsrike" target="_blank">
-              <img
-                class="social-icon"
-                src="/images/linkedin.png"
-                alt="linkedin"
-              />
-            </a>
-            <!-- Facebook icon -->
-            <a
-              href="https://web.facebook.com/profile.php?id=61558682669854"
-              target="_blank"
-            >
-              <img
-                class="social-icon"
-                src="/images/facebook.png"
-                alt="facebook"
-              />
-            </a>
-            <!-- Twitter/X icon -->
-            <a href="https://x.com/talstrike" target="_blank">
-              <img
-                class="social-icon"
-                src="/images/twitter.png"
-                alt="twitter"
-              />
-            </a>
-            <!-- Instagram icon -->
-            <a href="https://www.instagram.com/talstrike/" target="_blank">
-              <img
-                class="social-icon"
-                src="/images/instagram.png"
-                alt="instagram"
-              />
-            </a>
-          </div>
         </div>
-        <div class="footer-column">
-          <div class="footer-heading">Contact us</div>
-          <a
-            href="http://www.talstrike.com/contact"
-            class="contact-link"
-            target="_blank"
-            >www.talstrike.com/contact</a
-          >
+
+        <!-- Email content -->
+        <div class="content">
+          <p>Dear Dennis,</p>
+          <p>You requested a new verification code.</p>
+          <div class="verification-code">847293</div>
+          <p>
+            This code will expire in 10 minutes. Your previous code has been
+            deactivated. Still having trouble?
+            <a href="http://www.talstrikedev.com" class="link"
+              >Contact our support team</a
+            >
+            for assistance.
+          </p>
+          <p>
+            If you didn't request this new code, please secure your account
+            immediately.
+          </p>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Footer -->
+        <div class="footer">
+          <div class="footer-column">
+            <div class="footer-heading">Follow us on</div>
+            <div class="social-icons">
+              <!-- LinkedIn icon -->
+              <a
+                href="https://www.linkedin.com/company/talsrike"
+                target="_blank"
+              >
+                <img
+                  class="social-icon"
+                  src="/images/linkedin.png"
+                  alt="linkedin"
+                />
+              </a>
+              <!-- Facebook icon -->
+              <a
+                href="https://web.facebook.com/profile.php?id=61558682669854"
+                target="_blank"
+              >
+                <img
+                  class="social-icon"
+                  src="/images/facebook.png"
+                  alt="facebook"
+                />
+              </a>
+              <!-- Twitter/X icon -->
+              <a href="https://x.com/talstrike" target="_blank">
+                <img
+                  class="social-icon"
+                  src="/images/twitter.png"
+                  alt="twitter"
+                />
+              </a>
+              <!-- Instagram icon -->
+              <a href="https://www.instagram.com/talstrike/" target="_blank">
+                <img
+                  class="social-icon"
+                  src="/images/instagram.png"
+                  alt="instagram"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="footer-heading">Contact us</div>
+            <a
+              href="http://www.talstrike.com/contact"
+              class="contact-link"
+              target="_blank"
+              >www.talstrike.com/contact</a
+            >
+          </div>
         </div>
       </div>
     </div>
